@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /*fuente de letra*/
+    background-color: white;
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%; /*la imagen nunca superaria en ancho de su contenedor*/
+    display: block;
+}
+
+a {
+    text-decoration: none; /**/
+    color: inherit; /* color del texto normal*/
+}
+
+ul {
+  list-style: none;  
+}
+
+div.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+div.container header.cabecera {
+    background-color: white; 
+    padding: 15px;
+    display: grid;
+    grid-template-areas: 
+        "top"
+        "main"
+        "bottom";
+    gap: 15px;
+}
+
+div.container header.cabecera section.top {
+    grid-area: top;
+    border: 1px dashed green;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    color: #6a0dad;
+    }
+
+div.container header.cabecera section.top nav.redes i {
+    margin-right: 10px;
+    color: goldenrod;
+}
+
+div.container header.cabecera div.main {
+    grid-area: main; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center; 
+    gap: 15px; 
+    text-align: left;
+    border: 1px dashed red;
+}
+
+div.container header.cabecera div.main figure {
+    width: 120px; 
+    margin: 0 auto 10px auto;
+}
+
+div.container header.cabecera div.main hgroup.titulo h1 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+div.container header.cabecera div.main hgroup.titulo p {
+    font-family: cursive;
+    color: gray;
+    font-size: 1.1rem;
+}
+
+div.container header.cabecera div.bottom {
+    grid-area: bottom;
+    display: grid;
+    grid-template-areas: 
+        "addr1 addr2 icon"
+        "menu menu menu";
+    grid-template-columns: 1fr 1fr auto; 
+    gap: 5px;
+    align-items: center;
+    border: 1px dashed blue;
+}
+
+div.container header.cabecera div.bottom address.address1 {
+    grid-area: addr1;
+    background-color:  darkgrey;
+    padding: 8px 5px;
+    text-align: center;
+    font-style: normal;
+    font-size: 0.75rem;
+    border-radius: 4px;
+}
+
+div.container header.cabecera div.bottom address.address2 {
+    grid-area: addr2;
+    background-color:  darkgrey;
+    padding: 8px 5px;
+    text-align: center;
+    font-style: normal;
+    font-size: 0.75rem;
+    border-radius: 4px;
+}
+
+div.container header.cabecera div.bottom i.movil-icon {
+    grid-area: icon;
+    font-size: 1.8rem;
+    padding: 5px;
+    color: #444;
+    cursor: pointer;
+    justify-self: end;
+}
+
+div.container header.cabecera div.bottom nav.menu {
+    grid-area: menu;
+    margin-top: 5px;
+}
+
+div.container header.cabecera div.bottom nav.menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+div.container header.cabecera div.bottom nav.menu ul li {
+    border-bottom: 1px solid gray; 
+}
+
+div.container header.cabecera div.bottom nav.menu ul li a {
+    display: block;
+    padding: 10px;
+    color: #444;
+    font-weight: bold;
+}
+
+div.container header.cabecera div.bottom nav.menu ul li a i {
+    display: none;
+}
+
+div.container main {
+    padding: 15px;
+}
+
+div.container main h2.titulo-seccion {
+    font-family: cursive;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+div.container main section.galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div.container main section.galeria article.ficha {
+    border: 1px solid #ccc;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+div.container main section.galeria article.ficha figure { 
+    order: 1; 
+    margin: 0; 
+}
+
+div.container main section.galeria article.ficha h3 { 
+    order: 2; 
+    padding: 10px; 
+    text-align: center; 
+    font-size: 1rem; 
+}
+div.container main section.galeria article.ficha header.info-precio { 
+    order: 3; 
+    background-color: #bbb; 
+    padding: 5px 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    font-weight: bold; 
+    font-size: 0.9rem;
+}
+div.container main section.galeria article.ficha footer.info-iconos { 
+    order: 4; 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px; 
+    border-top: 1px solid #eee; 
+}
