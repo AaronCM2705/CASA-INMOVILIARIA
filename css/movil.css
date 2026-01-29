@@ -5,19 +5,19 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif; /*fuente de letra*/
+    font-family: Arial, Helvetica, sans-serif; 
     background-color: white;
     font-size: 14px;
 }
 
 img {
-    max-width: 100%; /*la imagen nunca superaria en ancho de su contenedor*/
+    max-width: 100%; 
     display: block;
 }
 
 a {
-    text-decoration: none; /**/
-    color: inherit; /* color del texto normal*/
+    text-decoration: none; 
+    color: inherit; 
 }
 
 ul {
@@ -31,7 +31,7 @@ div.container {
 }
 
 div.container header.cabecera {
-    background-color: white; 
+    background-color: rgb(221, 223, 224); 
     padding: 15px;
     display: grid;
     grid-template-areas: 
@@ -43,47 +43,47 @@ div.container header.cabecera {
 
 div.container header.cabecera section.top {
     grid-area: top;
-    border: 1px dashed green;
+    /* border: 1px dashed green; */
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
     gap: 5px;
     font-size: 0.8rem;
-    color: #6a0dad;
+    color: #50256f;
     }
 
 div.container header.cabecera section.top nav.redes i {
     margin-right: 10px;
-    color: goldenrod;
+    color: rgb(90, 114, 124);
 }
 
 div.container header.cabecera div.main {
     grid-area: main; 
-    display: flex; 
-    flex-direction: row; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: center; 
-    gap: 15px; 
-    text-align: left;
-    border: 1px dashed red;
+    text-align: justify;
 }
 
 div.container header.cabecera div.main figure {
-    width: 120px; 
-    margin: 0 auto 10px auto;
+    width: 120px;
+    margin: 5px;
+    /* border: 1px red solid; */
 }
 
 div.container header.cabecera div.main hgroup.titulo h1 {
     font-size: 1.5rem;
     color: #000;
     margin-bottom: 5px;
+    /* border: 1px red solid; */
 }
 
 div.container header.cabecera div.main hgroup.titulo p {
     font-family: cursive;
     color: gray;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
 }
 
 div.container header.cabecera div.bottom {
@@ -95,34 +95,34 @@ div.container header.cabecera div.bottom {
     grid-template-columns: 1fr 1fr auto; 
     gap: 5px;
     align-items: center;
-    border: 1px dashed blue;
+    /* border: 1px dashed blue; */
 }
 
 div.container header.cabecera div.bottom address.address1 {
     grid-area: addr1;
-    background-color:  darkgrey;
-    padding: 8px 5px;
+    background-color:  rgb(193, 193, 193);
+    padding: 8px 10px;
     text-align: center;
     font-style: normal;
-    font-size: 0.75rem;
-    border-radius: 4px;
+    font-size: 0.9rem;
+    border-radius: 8px;
 }
 
 div.container header.cabecera div.bottom address.address2 {
     grid-area: addr2;
-    background-color:  darkgrey;
-    padding: 8px 5px;
+    background-color:  rgb(193, 193, 193);
+    padding: 8px 10px;
     text-align: center;
     font-style: normal;
-    font-size: 0.75rem;
-    border-radius: 4px;
+    font-size: 0.9rem;
+    border-radius: 8px;
 }
 
 div.container header.cabecera div.bottom i.movil-icon {
     grid-area: icon;
     font-size: 1.8rem;
     padding: 5px;
-    color: #444;
+    color: #676767;
     cursor: pointer;
     justify-self: end;
 }
@@ -138,13 +138,13 @@ div.container header.cabecera div.bottom nav.menu ul {
 }
 
 div.container header.cabecera div.bottom nav.menu ul li {
-    border-bottom: 1px solid gray; 
+    border-bottom: 0px solid gray; 
 }
 
 div.container header.cabecera div.bottom nav.menu ul li a {
     display: block;
     padding: 10px;
-    color: #444;
+    color: #50256f;
     font-weight: bold;
 }
 
@@ -157,14 +157,13 @@ div.container main {
 }
 
 div.container main h2.titulo-seccion {
-    font-family: cursive;
-    margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 div.container main section.galeria {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 1.9rem;
 }
 
 div.container main section.galeria article.ficha {
