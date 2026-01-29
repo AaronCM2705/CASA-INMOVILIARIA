@@ -1,9 +1,3 @@
-div.container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-}
-
 div.container header.cabecera {
     display: grid;
     grid-template-areas: 
@@ -11,28 +5,14 @@ div.container header.cabecera {
         "main"
         "bottom";
     grid-template-columns: 1fr;
-    padding: 0 40px; /
 }
 
 div.container header.cabecera section.top {
     flex-direction: row;
     justify-content: flex-end;
     gap: 20px;
-    padding: 10px 0;
+    padding: 10px 10px;
 }
-
-div.container header.cabecera div.main {
-    justify-content: flex-start; 
-    display: flex;
-    align-items: center; 
-    gap: 20px;
-}
-
-div.container header.cabecera div.main figure {
-    width: 10%; 
-    margin: 0;
-}
-
 
 div.container header.cabecera div.bottom {
     display: block;
@@ -68,7 +48,7 @@ div.container header.cabecera div.bottom nav.menu ul li a {
 
 div.container header.cabecera div.bottom nav.menu ul li a i {
     display: block;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 8px;
 }
 
@@ -76,7 +56,7 @@ div.container main section.galeria {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 40px auto;
-    max-width: 100%vh; 
+    max-width: 100%; 
 }
 
 div.container main section.galeria article.ficha {
@@ -104,14 +84,13 @@ div.container main section.galeria article.ficha figure {
 div.container main section.galeria article.ficha figure img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 div.container main section.galeria article.ficha h3 {
     order: 3;
     padding: 15px;
     font-size: 1.1rem;
-    text-align: left;
+    text-align: center;
 }
 
 div.container main section.galeria article.ficha footer.info-iconos {

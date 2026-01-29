@@ -17,7 +17,6 @@ img {
 
 a {
     text-decoration: none; 
-    color: inherit; 
 }
 
 ul {
@@ -27,7 +26,6 @@ ul {
 div.container {
     width: 100%;
     margin: 0 auto;
-    overflow-x: hidden;
 }
 
 div.container header.cabecera {
@@ -39,11 +37,11 @@ div.container header.cabecera {
         "main"
         "bottom";
     gap: 15px;
+    border:crimson 1px dashed;
 }
 
 div.container header.cabecera section.top {
     grid-area: top;
-    /* border: 1px dashed green; */
     display: flex;
     flex-direction: column; 
     justify-content: center;
@@ -51,11 +49,14 @@ div.container header.cabecera section.top {
     gap: 5px;
     font-size: 0.8rem;
     color: #50256f;
+    border: green 1px dashed;
     }
 
 div.container header.cabecera section.top nav.redes i {
     margin-right: 10px;
     color: rgb(90, 114, 124);
+    cursor: pointer;
+
 }
 
 div.container header.cabecera div.main {
@@ -65,23 +66,21 @@ div.container header.cabecera div.main {
     justify-content: center;
     align-items: center;
     text-align: justify;
+    border: blueviolet 1px dashed;
 }
 
 div.container header.cabecera div.main figure {
     width: 120px;
     margin: 5px;
-    /* border: 1px red solid; */
 }
 
 div.container header.cabecera div.main hgroup.titulo h1 {
     font-size: 1.5rem;
     color: #000;
     margin-bottom: 5px;
-    /* border: 1px red solid; */
 }
 
 div.container header.cabecera div.main hgroup.titulo p {
-    font-family: cursive;
     color: gray;
     font-size: 1.0rem;
 }
@@ -95,7 +94,7 @@ div.container header.cabecera div.bottom {
     grid-template-columns: 1fr 1fr auto; 
     gap: 5px;
     align-items: center;
-    /* border: 1px dashed blue; */
+    border: blue 1px dashed;
 }
 
 div.container header.cabecera div.bottom address.address1 {
@@ -106,6 +105,7 @@ div.container header.cabecera div.bottom address.address1 {
     font-style: normal;
     font-size: 0.9rem;
     border-radius: 8px;
+    border: chocolate 1px dashed;
 }
 
 div.container header.cabecera div.bottom address.address2 {
@@ -116,6 +116,7 @@ div.container header.cabecera div.bottom address.address2 {
     font-style: normal;
     font-size: 0.9rem;
     border-radius: 8px;
+    border: darkorange 1px dashed;
 }
 
 div.container header.cabecera div.bottom i.movil-icon {
@@ -125,11 +126,13 @@ div.container header.cabecera div.bottom i.movil-icon {
     color: #676767;
     cursor: pointer;
     justify-self: end;
+    border: brown 1px dashed;
 }
 
 div.container header.cabecera div.bottom nav.menu {
     grid-area: menu;
     margin-top: 5px;
+    border: cornflowerblue 1px dashed;
 }
 
 div.container header.cabecera div.bottom nav.menu ul {
@@ -138,7 +141,7 @@ div.container header.cabecera div.bottom nav.menu ul {
 }
 
 div.container header.cabecera div.bottom nav.menu ul li {
-    border-bottom: 0px solid gray; 
+    border-bottom: 1px solid gray; 
 }
 
 div.container header.cabecera div.bottom nav.menu ul li a {
@@ -154,6 +157,7 @@ div.container header.cabecera div.bottom nav.menu ul li a i {
 
 div.container main {
     padding: 15px;
+    border: darkred 1px dashed;
 }
 
 div.container main h2.titulo-seccion {
@@ -164,11 +168,11 @@ div.container main section.galeria {
     display: grid;
     grid-template-columns: 1fr;
     margin: 1.9rem;
+    border:darkolivegreen 1px dashed;
 }
 
 div.container main section.galeria article.ficha {
-    border: 1px solid #ccc;
-    background: white;
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
 }
